@@ -1,0 +1,86 @@
+/* Reset some default styles for a cleaner look */
+body, h1, input, button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main app container */
+.App {
+  text-align: center;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* The to-do list form */
+form {
+  margin-bottom: 2rem;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  width: 70%;
+  font-size: 1rem;
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* To-do list items */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li > button {
+  margin-left: 0.5rem;
+  background-color: #28a745;
+}
+
+li > button:hover {
+  background-color: #218838;
+}
+
+li > .delete-btn {
+  background-color: #dc3545;
+}
+
+li > .delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Completed task styling */
+.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
